@@ -8,7 +8,7 @@ public enum ConversationError: Error {
 
 @Observable
 public final class Conversation: @unchecked Sendable {
-	private let client: RealtimeAPI
+	public let client: RealtimeAPI
 	@MainActor private var isInterrupting: Bool = false
 	private let errorStream: AsyncStream<ServerError>.Continuation
 
