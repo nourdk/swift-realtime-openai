@@ -13,12 +13,12 @@ let package = Package(
 		.macCatalyst(.v17),
 	],
 	products: [
-		.library(name: "OpenAIRealtime", type: .static, targets: ["OpenAIRealtime"]),
+		.library(name: "OpenAIRealtime",  targets: ["OpenAIRealtime"]),
 	],
 	dependencies: [
 		.package(url: "https://github.com/stasel/WebRTC.git", branch: "latest"),
 	],
 	targets: [
-		.target(name: "OpenAIRealtime", dependencies: ["WebRTC"], path: "./src"),
+		.target(name: "OpenAIRealtime", dependencies: ["WebRTC"], path: "src"),
 	]
 )
